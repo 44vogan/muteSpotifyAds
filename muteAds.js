@@ -7,7 +7,7 @@ function muteAd(){
     console.log('adElement text',adElement.text);
     const adElementName = adElement.text;
     // Check if 'adver' is in adElementName using in operator
-    hasAd = adElementName.includes('Adver')
+    hasAd = adElementName.toLowerCase().startsWith('ad')
     if (hasAd){
       console.log('hasAd')
     }else{
